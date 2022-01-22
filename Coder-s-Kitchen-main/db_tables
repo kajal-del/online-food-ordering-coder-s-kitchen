@@ -1,0 +1,44 @@
+create database coders_kitchen_id
+create table food
+    (foodid int primary key auto_increment,
+    foodname varchar(100) not null,
+    foodcategory varchar(100) not null,
+    foodtype varchar(100) not null,
+    foodprice int not null)
+    ;
+
+
+
+create table customer
+    (custid int unique not null auto_increment,
+     custname varchar(50) not null,
+     custemail varchar(50)primary key not null,
+     custcontact varchar(10)unique not null,
+     custaddress varchar(50)not null,
+     custpassword varchar(20)not null,
+     custconfirmpassword varchar(20)not null);
+
+
+
+
+ create table cart
+    (cartid int primary key auto_increment,
+    foodid int not null,
+   custemail varchar(50) not null,
+     foodquantity int not null default 1);
+
+
+create table orders (orderid int primary key auto_increment, custemail varchar(50) not null, orderdate varchar(50),totalprice int not null,orderstatus varchar(50)default 'processing');
+
+delimiter $
+create trigger takebackup before delete on cart for each row begin insert into backupcart(foodid,custemail,foodquantity) values(old.foodid,old.custemail,old.foodquantity); end$
+
+
+create table backupcart
+(id int primary key auto_increment,
+foodid int not null,
+ custemail varchar(50)not null,
+ foodquantity int not null);
+
+
+ select orderid,foodname,foodcategory,foodtype,foodprice,foodquantity,orderdate from food f inner join backupcart b inner join orders o  on f.foodid=b.foodid and o.custemail=b.custemail where o.custemail='pooja@gmail.com'$
