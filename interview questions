@@ -1,0 +1,66 @@
+datatype
+1. What is use of void data type?
+2. What is size of int data type in c?
+3. What will happen if we will assign a value to float variable which is beyond the range of float data type?
+4. Write down three derived data types in c.
+5. Can we use signed keyword with double? Why?  
+6. Why range of signed char is -128 to 127 not -127 to 128?
+7. What is cyclic nature of int data type?
+8. What will be output of following c code?
+void main(){
+    char i=250;
+    printf(“%d”,i);
+}
+9. What is volatile keyword in c?
+10. It is necessary to initialize the const variable in c?
+
+What is the difference between list and tuples in Python?
+Q2. What are the key features of Python?
+Q3. What type of language is python?
+Q4. How is Python an interpreted language?
+Q5. What is pep 8?
+Q6. How is memory managed in Python?
+Q7. What is name space in Python?
+Q8. What is PYTHON PATH?
+Q9. What are python modules?
+Q10. What are local variables and global variables in Python?
+
+Name the keyword which helps in writing code involves condition.
+ Write the syntax of simple if statement.
+ Is there any limit of statement that can appear under an if block.
+ Write a program to check whether a person is eligible for voting or not. (accept age from user)
+  Write a program to check whether a number entered by user is even or odd.
+  Write a program to check whether a number is divisible by 7 or not.
+  Write a program to display "Hello" if a number entered by user is a multiple of five , 
+otherwise print "Bye".
+Write a program to check whether the last digit of a number( entered by user ) is 
+divisible by 3 or not.
+Write a program to display the last digit of a number.
+
+What keyword is used for looping?
+What function can generate a list of numbers?
+Name the 2 keywords used for looping?
+What module is used for generating random values?
+What keyword is used to skip back to the beginning of a loop?
+What keyword is used to end looping completely?
+Use range to generate a list from 1 through 5?
+Select the code needed to generate a random number between 1 through 50 and assign it to rand_num?
+What numbers does the following Range generate: range(5,10)?
+What numbers does the following range generate range(3)?
+What is printed out after the following code nums = range(1,5) print(nums)?
+What numbers does the following range generate range(8,0,-2):
+What does the following loop do?
+What does the following loop do?
+What can we do to get out of the infinite loop below?
+ For loops are used to loop over:
+ What is the tradeoff when using while loops for looping?
+ What does the break keyword do?
+ What does the following code print?
+ 
+ What are the parameters and arguments?
+ What are the different types of arguments in Python?
+ What is the lambda function?
+ What’s the difference between normal function and lambda function?
+  What is the pass keyword used for?
+  What is a recursive function?
+  What are packing operators in Python? How to use them?
